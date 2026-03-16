@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+langchain==0.1.16
+langchain-community
+chromadb
+sentence-transformers
+pydantic
+ollama

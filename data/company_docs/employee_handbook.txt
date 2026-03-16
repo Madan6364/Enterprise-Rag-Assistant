@@ -1,0 +1,35 @@
+ABC Technologies Employee Handbook
+
+Company Overview
+ABC Technologies is a global software development company specializing in AI, Cloud Computing, and Data Analytics solutions.
+
+Working Hours
+Employees are expected to work from 9:30 AM to 6:30 PM Monday through Friday.
+
+Leave Policy
+Employees are entitled to:
+- 12 Casual Leaves per year
+- 10 Sick Leaves per year
+- 15 Paid Vacation Leaves annually
+
+Remote Work Policy
+Employees may work remotely up to 3 days per week with manager approval.
+
+Code of Conduct
+All employees must maintain professional behavior and follow ethical guidelines.
+
+IT Support
+For technical issues employees should contact:
+itsupport@abctech.com
+
+Performance Evaluation
+Employee performance reviews are conducted every 6 months.
+
+Promotion Policy
+Promotions are based on performance, leadership skills, and business contribution.
+
+Security Policy
+Employees must not share company confidential data externally.
+
+Training Programs
+ABC Technologies provides AI and Cloud certification training programs for employees.
