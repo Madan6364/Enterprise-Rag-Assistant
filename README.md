@@ -1,9 +1,9 @@
-# Enterprise RAG Assistant
+### Enterprise RAG Assistant
 
 Enterprise Retrieval Augmented Generation (RAG) Assistant that answers
 questions from company documents using LLMs.
 
-## Tech Stack
+#### Tech Stack
 
 - FastAPI
 - Streamlit
@@ -12,11 +12,11 @@ questions from company documents using LLMs.
 - Docker
 - ChromaDB
 
-## Architecture
+#### Architecture
 
 User → Streamlit UI → FastAPI API → LangChain → Vector DB → LLM → Response
 
-## Features
+#### Features
 
 - Document based question answering
 - Local LLM using Ollama
@@ -24,7 +24,7 @@ User → Streamlit UI → FastAPI API → LangChain → Vector DB → LLM → Re
 - API based architecture
 - Docker support
 
-## Run Locally
+#### Run Locally
 
 git clone https://github.com/Madan6364/enterprise-rag-assistant.git
 
@@ -36,11 +36,11 @@ uvicorn app.main:app --reload
 
 streamlit run frontend/app.py
 
-## Example Question
+#### Example Question
 
 What is the leave policy?
 
-## Output
+#### Output
 
 Employees get:
 - 12 Casual Leaves
