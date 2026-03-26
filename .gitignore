@@ -1,5 +1,18 @@
-venv/
+# Python
 __pycache__/
 *.pyc
+
+# Virtual environment
+venv/
+
+# Chroma / vector DB
+chroma_db/
 vectordb/
-.env
+vector_db/
+db/
+
+# Models
+models/
+
+# Test files
+test.py
