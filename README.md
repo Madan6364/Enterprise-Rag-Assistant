@@ -1,54 +1,76 @@
 ### Enterprise RAG Assistant
 
-Enterprise Retrieval Augmented Generation (RAG) Assistant that answers
-questions from company documents using LLMs.
+An end-to-end Retrieval-Augmented Generation (RAG) application built using FastAPI, LangChain, ChromaDB, and HuggingFace models.
+This project allows users to ask questions and receive intelligent answers generated using a local knowledge base.
+
+#### Project Overview
+
+This project demonstrates how modern AI systems combine vector databases + large language models to build intelligent assistants.
+
+Instead of giving generic answers, the assistant:
+
+Searches relevant documents from a vector database (ChromaDB)
+Retrieves the most relevant context
+Sends the context to a language model (FLAN-T5)
+Generates a meaningful answer based on the retrieved knowledge
 
 #### Tech Stack
+Python
+FastAPI
+LangChain
+ChromaDB (Vector Database)
+HuggingFace Transformers
+Sentence-Transformers (Embeddings)
+Uvicorn
 
-- FastAPI
-- Streamlit
-- LangChain
-- Ollama
-- Docker
-- ChromaDB
+#### Project Structure
+enterprise-rag-assistant/
+│
+├── app/
+│   ├── main.py
+│   ├── rag_pipeline.py
+│   ├── api.py
+│   └── config.py
+│
+├── insert_docs.py
+├── requirements.txt
+└── README.md
 
-#### Architecture
+#### How It Works
 
-User → Streamlit UI → FastAPI API → LangChain → Vector DB → LLM → Response
+Step 1: User sends a question using the /ask API
+Step 2: The question is converted into embeddings
+Step 3: ChromaDB retrieves the most relevant documents
+Step 4: The retrieved context is passed to the LLM
+Step 5: The system generates an AI-powered answer
 
-#### Features
-
-- Document based question answering
-- Local LLM using Ollama
-- Vector search with embeddings
-- API based architecture
-- Docker support
-
-#### Run Locally
-
+#### How to Run the Project
+1. Clone the repository
 git clone https://github.com/Madan6364/enterprise-rag-assistant.git
-
 cd enterprise-rag-assistant
-
+2. Install dependencies
 pip install -r requirements.txt
+3. Insert sample documents
+python insert_docs.py
+4. Run the API
+python -m uvicorn app.main:app --reload
+5. Open Swagger UI
+http://127.0.0.1:8000/docs
 
-uvicorn app.main:app --reload
+Now you can test the /ask endpoint.
 
-streamlit run frontend/app.py
+Example Query
+{
+  "query": "What is the role of AI in the IT industry?"
+}
 
-#### Example Question
-
-What is the leave policy?
-
-#### Output
-
-Employees get:
-- 12 Casual Leaves
-- 10 Sick Leaves
-- 15 Paid Vacation Leaves
-
-Run ingestion:
-
+#### Key Features
+End-to-end RAG pipeline
+Local vector database using ChromaDB
+Local language model using HuggingFace
+FastAPI backend with Swagger UI
+Clean and modular project structure
+Ready for real-world knowledge-based applications
 python app/ingest.py
 
 Start API:
