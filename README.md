@@ -1,25 +1,51 @@
-# Enterprise RAG Assistant
+### Enterprise RAG Assistant
 
-Enterprise-grade Retrieval Augmented Generation system built using:
+Enterprise Retrieval Augmented Generation (RAG) Assistant that answers
+questions from company documents using LLMs.
+
+#### Tech Stack
 
 - FastAPI
+- Streamlit
 - LangChain
+- Ollama
+- Docker
 - ChromaDB
-- Ollama (Llama3)
-- Local Vector Database
 
-## Features
-- Document Question Answering
-- Enterprise Knowledge Search
-- Local LLM Inference
-- REST API
-- Swagger UI
+#### Architecture
 
-## Run Project
+User → Streamlit UI → FastAPI API → LangChain → Vector DB → LLM → Response
 
-Install dependencies:
+#### Features
+
+- Document based question answering
+- Local LLM using Ollama
+- Vector search with embeddings
+- API based architecture
+- Docker support
+
+#### Run Locally
+
+git clone https://github.com/Madan6364/enterprise-rag-assistant.git
+
+cd enterprise-rag-assistant
 
 pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+
+streamlit run frontend/app.py
+
+#### Example Question
+
+What is the leave policy?
+
+#### Output
+
+Employees get:
+- 12 Casual Leaves
+- 10 Sick Leaves
+- 15 Paid Vacation Leaves
 
 Run ingestion:
 
