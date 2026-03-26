@@ -65,12 +65,13 @@ Example Query
 }
 
 #### Key Features
-End-to-end RAG pipeline
-Local vector database using ChromaDB
-Local language model using HuggingFace
-FastAPI backend with Swagger UI
-Clean and modular project structure
-Ready for real-world knowledge-based applications
+1. End-to-end RAG pipeline
+2. Local vector database using ChromaDB
+3. Local language model using HuggingFace
+4. FastAPI backend with Swagger UI
+5. Clean and modular project structure
+6. Ready for real-world knowledge-based applications
+
 python app/ingest.py
 
 Start API:
